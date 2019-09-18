@@ -1,6 +1,6 @@
 # 3. Vector Data
 ---
-This chapter concentrates on using GDAL/OGR to convert, process and manipulate various different vector datasets. The most command command line tool used for this is [ogr2ogr](https://gdal.org/programs/ogr2ogr.html#ogr2ogr). By using the variety of parameters listed in the documentation OGR2OGR can be used to do __anything__ with vector data. 
+This chapter concentrates on using GDAL/OGR to convert, process and manipulate various different vector datasets. The most command line tool used for this is [ogr2ogr](https://gdal.org/programs/ogr2ogr.html#ogr2ogr). By using the variety of parameters listed in the documentation OGR2OGR can be used to do __anything__ with vector data. 
 
 From the docs ogr2ogr is described as
 
