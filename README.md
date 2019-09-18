@@ -22,11 +22,18 @@ The workshop is broken down into different parts to help users flow through the 
 
 Download this repo either using git using __clone__ directly or the download it in the top right hand corner.
 
-I would then recommend opening the folder (unzip it if required) in a good text editor like Visual Studio Code or Atom Editor, and then open each markdown readme file and then run the GDAL commands in Command Prompt rather than PowerShell on Windows, on Linux and Mac the OSX will work fine.
+I would then recommend opening the folder (unzip it if required) in a good text editor like Visual Studio Code or Atom Editor, and then open each markdown readme file and then run the GDAL commands in Command Prompt rather than PowerShell on Windows, on Linux and OSX the terminal will work fine.
 
 ## Feedback
 
 This workshop is intended to help all types of uses with beginner and advance examples. I have tried to include and cover as much however as GDAL gets updated some of the information included 
+
+## Future Developments
+
+I intend to add:
+
+- some examples of scripting in NodeJS and Python using some of the commands included in the workshop
+- COG - Cloud Optimised GeoTiff is really exciting new format added for version 3.1
 
 ## Licence and Copyright Acknowledgement
 
