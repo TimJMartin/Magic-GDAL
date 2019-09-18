@@ -73,9 +73,9 @@ We dropped the __-gt__ parameter because the ESRI Shapefile we are converting to
 
 ## 3.4 Using additional projection files
 ---
-In the in-built coordinate transformations are built on the Proj library. There is an excellent write up all about the Proj Library and its history (here)[gaia-gis.it/fossil/libspatialite/wiki?name=PROJ.6]. However, on the rare occasion the library does not contain the most accurate transformation for a particular CRS and that is the case for British National Grid.
+In the in-built coordinate transformations are built on the Proj library. There is an excellent write up all about the Proj Library and its history [here](gaia-gis.it/fossil/libspatialite/wiki?name=PROJ.6). However, on the rare occasion the library does not contain the most accurate transformation for a particular CRS and that is the case for British National Grid.
 
-Ordnance Survey release a transformation model called (OSTN15)[ordnancesurvey.co.uk/business-and-government/help-and-support/navigation-technology/os-net/formats-for-developers.html] which improves the accuracy of coordinate transformation and we can use that in conjunction with GDAL to improve our conversion.
+Ordnance Survey release a transformation model called [OSTN15](ordnancesurvey.co.uk/business-and-government/help-and-support/navigation-technology/os-net/formats-for-developers.html) which improves the accuracy of coordinate transformation and we can use that in conjunction with GDAL to improve our conversion.
 
 ```ogr2ogr -progress -f "ESRI Shapefile" ../../Results/NationalParks_WGS84_OSTN15.shp NationalParks.shp -s_srs "+proj=tmerc +lat_0=49 +lon_0=-2 +k=0.999601 +x_0=400000 +y_0=-100000 +ellps=airy +units=m +no_defs +nadgrids=C:\Proj4\OSTN15_NTv2_OSGBtoETRS.gsb" -t_srs EPSG:4326 ``` 
 
