@@ -97,6 +97,8 @@ This can save us a lot of time and effort by not having to extract the files fir
 
 We can initially check the file using the __ogrinfo__ as before.
 
+Open command prompt in /Data/Vector/ZippedShapefile and run:
+
 ```ogrinfo /vsizip/NationalParks.zip```
 
 Again it will successfully read the file and list the different layers.
