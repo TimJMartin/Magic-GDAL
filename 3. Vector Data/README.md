@@ -79,7 +79,7 @@ Ordnance Survey release a transformation model called [OSTN15](https://ordnances
 
 Download the NTv2 format files from the website and extract them to a suitable place on your computer.
 
-The below command gives you and example of how to use the __OSTN15_NTv2_OSGBtoETRS.gsb__ which I extracted to C:\Proj4, if your location is different replace the path to where the gsb file is.
+The below command gives you an example of how to use the __OSTN15_NTv2_OSGBtoETRS.gsb__ which I extracted to C:\Proj4, if your location is different replace the path to where the gsb file is.
 
 ```ogr2ogr -progress -f "ESRI Shapefile" ../../Results/NationalParks_WGS84_OSTN15.shp NationalParks.shp -s_srs "+proj=tmerc +lat_0=49 +lon_0=-2 +k=0.999601 +x_0=400000 +y_0=-100000 +ellps=airy +units=m +no_defs +nadgrids=C:\Proj4\OSTN15_NTv2_OSGBtoETRS.gsb" -t_srs EPSG:4326 ``` 
 
