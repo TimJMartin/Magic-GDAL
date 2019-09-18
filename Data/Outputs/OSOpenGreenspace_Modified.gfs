@@ -1,0 +1,18 @@
+<GMLFeatureClassList>
+  <SequentialLayers>true</SequentialLayers>
+  <GMLFeatureClass>
+    <Name>GreenspaceSite</Name>
+    <ElementPath>GreenspaceSite</ElementPath>
+    <GeometryName>geometry</GeometryName>
+    <GeometryElementPath>geometry</GeometryElementPath>
+    <!--MULTIPOLYGON-->
+    <GeometryType>6</GeometryType>
+    <SRSName>urn:ogc:def:crs:EPSG::27700</SRSName>
+    <PropertyDefn>
+      <Name>function</Name>
+      <ElementPath>function</ElementPath>
+      <Type>String</Type>
+      <Width>38</Width>
+    </PropertyDefn>
+  </GMLFeatureClass>
+</GMLFeatureClassList>

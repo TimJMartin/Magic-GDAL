@@ -1,0 +1,314 @@
+<VRTDataset rasterXSize="16000" rasterYSize="12000">
+  <SRS dataAxisToSRSAxisMapping="1,2">PROJCS["OSGB 1936 / British National Grid",GEOGCS["OSGB 1936",DATUM["OSGB_1936",SPHEROID["Airy 1830",6377563.396,299.3249646,AUTHORITY["EPSG","7001"]],AUTHORITY["EPSG","6277"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]],AUTHORITY["EPSG","4277"]],PROJECTION["Transverse_Mercator"],PARAMETER["latitude_of_origin",49],PARAMETER["central_meridian",-2],PARAMETER["scale_factor",0.9996012717],PARAMETER["false_easting",400000],PARAMETER["false_northing",-100000],UNIT["metre",1,AUTHORITY["EPSG","9001"]],AXIS["Easting",EAST],AXIS["Northing",NORTH],AUTHORITY["EPSG","27700"]]</SRS>
+  <GeoTransform>  1.0000000000000000e+05,  2.5000000000000000e+01,  0.0000000000000000e+00,  1.3000000000000000e+06,  0.0000000000000000e+00, -2.5000000000000000e+01</GeoTransform>
+  <VRTRasterBand dataType="Byte" band="1">
+    <ColorInterp>Palette</ColorInterp>
+    <ColorTable>
+      <Entry c1="228" c2="240" c3="254" c4="255" />
+      <Entry c1="252" c2="252" c3="254" c4="255" />
+      <Entry c1="252" c2="252" c3="242" c4="255" />
+      <Entry c1="252" c2="240" c3="210" c4="255" />
+      <Entry c1="248" c2="228" c3="182" c4="255" />
+      <Entry c1="216" c2="232" c3="174" c4="255" />
+      <Entry c1="72" c2="55" c3="56" c4="255" />
+      <Entry c1="248" c2="206" c3="208" c4="255" />
+      <Entry c1="242" c2="174" c3="183" c4="255" />
+      <Entry c1="86" c2="76" c3="78" c4="255" />
+      <Entry c1="147" c2="142" c3="143" c4="255" />
+      <Entry c1="248" c2="184" c3="200" c4="255" />
+      <Entry c1="232" c2="184" c3="200" c4="255" />
+      <Entry c1="241" c2="147" c3="184" c4="255" />
+      <Entry c1="57" c2="8" c3="28" c4="255" />
+      <Entry c1="248" c2="168" c3="200" c4="255" />
+      <Entry c1="57" c2="24" c3="38" c4="255" />
+      <Entry c1="233" c2="88" c3="159" c4="255" />
+      <Entry c1="210" c2="144" c3="176" c4="255" />
+      <Entry c1="227" c2="168" c3="197" c4="255" />
+      <Entry c1="40" c2="8" c3="24" c4="255" />
+      <Entry c1="143" c2="48" c3="96" c4="255" />
+      <Entry c1="248" c2="184" c3="216" c4="255" />
+      <Entry c1="209" c2="19" c3="120" c4="255" />
+      <Entry c1="230" c2="120" c3="178" c4="255" />
+      <Entry c1="180" c2="103" c3="143" c4="255" />
+      <Entry c1="245" c2="150" c3="200" c4="255" />
+      <Entry c1="220" c2="55" c3="149" c4="255" />
+      <Entry c1="248" c2="210" c3="232" c4="255" />
+      <Entry c1="248" c2="168" c3="216" c4="255" />
+      <Entry c1="232" c2="184" c3="216" c4="255" />
+      <Entry c1="80" c2="51" c3="71" c4="255" />
+      <Entry c1="248" c2="183" c3="232" c4="255" />
+      <Entry c1="226" c2="167" c3="216" c4="255" />
+      <Entry c1="247" c2="151" c3="232" c4="255" />
+      <Entry c1="137" c2="116" c3="134" c4="255" />
+      <Entry c1="202" c2="184" c3="200" c4="255" />
+      <Entry c1="218" c2="200" c3="216" c4="255" />
+      <Entry c1="203" c2="140" c3="198" c4="255" />
+      <Entry c1="105" c2="88" c3="104" c4="255" />
+      <Entry c1="24" c2="8" c3="24" c4="255" />
+      <Entry c1="56" c2="40" c3="56" c4="255" />
+      <Entry c1="184" c2="168" c3="184" c4="255" />
+      <Entry c1="248" c2="231" c3="248" c4="255" />
+      <Entry c1="232" c2="231" c3="232" c4="255" />
+      <Entry c1="40" c2="23" c3="41" c4="255" />
+      <Entry c1="165" c2="151" c3="168" c4="255" />
+      <Entry c1="24" c2="11" c3="42" c4="255" />
+      <Entry c1="173" c2="152" c3="207" c4="255" />
+      <Entry c1="200" c2="199" c3="218" c4="255" />
+      <Entry c1="8" c2="8" c3="24" c4="255" />
+      <Entry c1="129" c2="129" c3="194" c4="255" />
+      <Entry c1="40" c2="40" c3="58" c4="255" />
+      <Entry c1="232" c2="232" c3="248" c4="255" />
+      <Entry c1="147" c2="153" c3="203" c4="255" />
+      <Entry c1="166" c2="168" c3="185" c4="255" />
+      <Entry c1="141" c2="147" c3="182" c4="255" />
+      <Entry c1="84" c2="90" c3="106" c4="255" />
+      <Entry c1="209" c2="216" c3="232" c4="255" />
+      <Entry c1="89" c2="137" c3="205" c4="255" />
+      <Entry c1="87" c2="116" c3="154" c4="255" />
+      <Entry c1="174" c2="194" c3="221" c4="255" />
+      <Entry c1="46" c2="134" c3="234" c4="255" />
+      <Entry c1="16" c2="39" c3="63" c4="255" />
+      <Entry c1="8" c2="136" c3="248" c4="255" />
+      <Entry c1="24" c2="136" c3="232" c4="255" />
+      <Entry c1="40" c2="134" c3="214" c4="255" />
+      <Entry c1="36" c2="63" c3="86" c4="255" />
+      <Entry c1="8" c2="136" c3="232" c4="255" />
+      <Entry c1="24" c2="149" c3="248" c4="255" />
+      <Entry c1="41" c2="152" c3="232" c4="255" />
+      <Entry c1="8" c2="136" c3="216" c4="255" />
+      <Entry c1="24" c2="152" c3="232" c4="255" />
+      <Entry c1="20" c2="81" c3="120" c4="255" />
+      <Entry c1="170" c2="216" c3="245" c4="255" />
+      <Entry c1="8" c2="158" c3="248" c4="255" />
+      <Entry c1="8" c2="152" c3="232" c4="255" />
+      <Entry c1="38" c2="129" c3="179" c4="255" />
+      <Entry c1="9" c2="132" c3="196" c4="255" />
+      <Entry c1="17" c2="108" c3="157" c4="255" />
+      <Entry c1="27" c2="152" c3="216" c4="255" />
+      <Entry c1="48" c2="169" c3="232" c4="255" />
+      <Entry c1="62" c2="185" c3="248" c4="255" />
+      <Entry c1="144" c2="210" c3="244" c4="255" />
+      <Entry c1="208" c2="232" c3="245" c4="255" />
+      <Entry c1="8" c2="152" c3="216" c4="255" />
+      <Entry c1="23" c2="168" c3="232" c4="255" />
+      <Entry c1="80" c2="182" c3="229" c4="255" />
+      <Entry c1="111" c2="197" c3="237" c4="255" />
+      <Entry c1="49" c2="168" c3="216" c4="255" />
+      <Entry c1="8" c2="24" c3="30" c4="255" />
+      <Entry c1="24" c2="168" c3="215" c4="255" />
+      <Entry c1="162" c2="184" c3="190" c4="255" />
+      <Entry c1="48" c2="164" c3="193" c4="255" />
+      <Entry c1="112" c2="189" c3="208" c4="255" />
+      <Entry c1="183" c2="232" c3="245" c4="255" />
+      <Entry c1="9" c2="152" c3="184" c4="255" />
+      <Entry c1="89" c2="180" c3="199" c4="255" />
+      <Entry c1="149" c2="232" c3="248" c4="255" />
+      <Entry c1="142" c2="200" c3="208" c4="255" />
+      <Entry c1="200" c2="216" c3="216" c4="255" />
+      <Entry c1="232" c2="248" c3="248" c4="255" />
+      <Entry c1="55" c2="57" c3="57" c4="255" />
+      <Entry c1="39" c2="40" c3="40" c4="255" />
+      <Entry c1="10" c2="149" c3="136" c4="255" />
+      <Entry c1="70" c2="181" c3="168" c4="255" />
+      <Entry c1="177" c2="211" c3="207" c4="255" />
+      <Entry c1="11" c2="133" c3="96" c4="255" />
+      <Entry c1="9" c2="152" c3="95" c4="255" />
+      <Entry c1="8" c2="136" c3="72" c4="255" />
+      <Entry c1="88" c2="142" c3="114" c4="255" />
+      <Entry c1="129" c2="201" c3="163" c4="255" />
+      <Entry c1="8" c2="152" c3="72" c4="255" />
+      <Entry c1="52" c2="168" c3="103" c4="255" />
+      <Entry c1="99" c2="187" c3="139" c4="255" />
+      <Entry c1="32" c2="162" c3="88" c4="255" />
+      <Entry c1="148" c2="171" c3="158" c4="255" />
+      <Entry c1="8" c2="168" c3="72" c4="255" />
+      <Entry c1="12" c2="120" c3="56" c4="255" />
+      <Entry c1="12" c2="93" c3="45" c4="255" />
+      <Entry c1="77" c2="182" c3="120" c4="255" />
+      <Entry c1="40" c2="80" c3="56" c4="255" />
+      <Entry c1="183" c2="232" c3="203" c4="255" />
+      <Entry c1="42" c2="152" c3="83" c4="255" />
+      <Entry c1="165" c2="214" c3="183" c4="255" />
+      <Entry c1="8" c2="142" c3="55" c4="255" />
+      <Entry c1="8" c2="54" c3="24" c4="255" />
+      <Entry c1="50" c2="127" c3="78" c4="255" />
+      <Entry c1="210" c2="232" c3="216" c4="255" />
+      <Entry c1="30" c2="158" c3="61" c4="255" />
+      <Entry c1="81" c2="174" c3="98" c4="255" />
+      <Entry c1="228" c2="248" c3="232" c4="255" />
+      <Entry c1="37" c2="60" c3="40" c4="255" />
+      <Entry c1="8" c2="28" c3="8" c4="255" />
+      <Entry c1="200" c2="216" c3="200" c4="255" />
+      <Entry c1="63" c2="170" c3="57" c4="255" />
+      <Entry c1="127" c2="197" c3="122" c4="255" />
+      <Entry c1="88" c2="111" c3="86" c4="255" />
+      <Entry c1="200" c2="248" c3="195" c4="255" />
+      <Entry c1="158" c2="206" c3="150" c4="255" />
+      <Entry c1="199" c2="232" c3="186" c4="255" />
+      <Entry c1="93" c2="185" c3="41" c4="255" />
+      <Entry c1="200" c2="248" c3="168" c4="255" />
+      <Entry c1="231" c2="248" c3="216" c4="255" />
+      <Entry c1="216" c2="248" c3="184" c4="255" />
+      <Entry c1="128" c2="200" c3="37" c4="255" />
+      <Entry c1="156" c2="213" c3="86" c4="255" />
+      <Entry c1="199" c2="222" c3="168" c4="255" />
+      <Entry c1="216" c2="248" c3="168" c4="255" />
+      <Entry c1="216" c2="232" c3="184" c4="255" />
+      <Entry c1="232" c2="248" c3="200" c4="255" />
+      <Entry c1="187" c2="226" c3="80" c4="255" />
+      <Entry c1="168" c2="215" c3="24" c4="255" />
+      <Entry c1="216" c2="232" c3="168" c4="255" />
+      <Entry c1="232" c2="248" c3="184" c4="255" />
+      <Entry c1="232" c2="248" c3="168" c4="255" />
+      <Entry c1="214" c2="230" c3="144" c4="255" />
+      <Entry c1="203" c2="231" c3="48" c4="255" />
+      <Entry c1="210" c2="224" c3="117" c4="255" />
+      <Entry c1="208" c2="232" c3="12" c4="255" />
+      <Entry c1="231" c2="248" c3="88" c4="255" />
+      <Entry c1="176" c2="182" c3="131" c4="255" />
+      <Entry c1="184" c2="187" c3="163" c4="255" />
+      <Entry c1="229" c2="248" c3="25" c4="255" />
+      <Entry c1="232" c2="248" c3="71" c4="255" />
+      <Entry c1="231" c2="248" c3="8" c4="255" />
+      <Entry c1="204" c2="207" c3="152" c4="255" />
+      <Entry c1="244" c2="248" c3="113" c4="255" />
+      <Entry c1="248" c2="248" c3="8" c4="255" />
+      <Entry c1="232" c2="232" c3="8" c4="255" />
+      <Entry c1="248" c2="248" c3="24" c4="255" />
+      <Entry c1="232" c2="232" c3="27" c4="255" />
+      <Entry c1="248" c2="248" c3="72" c4="255" />
+      <Entry c1="231" c2="232" c3="71" c4="255" />
+      <Entry c1="24" c2="24" c3="8" c4="255" />
+      <Entry c1="248" c2="248" c3="88" c4="255" />
+      <Entry c1="232" c2="232" c3="88" c4="255" />
+      <Entry c1="232" c2="232" c3="135" c4="255" />
+      <Entry c1="248" c2="247" c3="151" c4="255" />
+      <Entry c1="248" c2="248" c3="168" c4="255" />
+      <Entry c1="232" c2="232" c3="167" c4="255" />
+      <Entry c1="248" c2="248" c3="184" c4="255" />
+      <Entry c1="232" c2="232" c3="184" c4="255" />
+      <Entry c1="248" c2="248" c3="200" c4="255" />
+      <Entry c1="232" c2="232" c3="200" c4="255" />
+      <Entry c1="248" c2="248" c3="216" c4="255" />
+      <Entry c1="232" c2="232" c3="216" c4="255" />
+      <Entry c1="248" c2="248" c3="232" c4="255" />
+      <Entry c1="208" c2="204" c3="9" c4="255" />
+      <Entry c1="171" c2="166" c3="19" c4="255" />
+      <Entry c1="248" c2="243" c3="46" c4="255" />
+      <Entry c1="195" c2="190" c3="73" c4="255" />
+      <Entry c1="216" c2="210" c3="85" c4="255" />
+      <Entry c1="248" c2="232" c3="8" c4="255" />
+      <Entry c1="232" c2="215" c3="10" c4="255" />
+      <Entry c1="248" c2="231" c3="24" c4="255" />
+      <Entry c1="248" c2="232" c3="88" c4="255" />
+      <Entry c1="178" c2="166" c3="72" c4="255" />
+      <Entry c1="218" c2="216" c3="200" c4="255" />
+      <Entry c1="248" c2="222" c3="72" c4="255" />
+      <Entry c1="235" c2="213" c3="84" c4="255" />
+      <Entry c1="204" c2="201" c3="183" c4="255" />
+      <Entry c1="247" c2="214" c3="51" c4="255" />
+      <Entry c1="144" c2="128" c3="43" c4="255" />
+      <Entry c1="248" c2="232" c3="168" c4="255" />
+      <Entry c1="60" c2="49" c3="8" c4="255" />
+      <Entry c1="248" c2="217" c3="104" c4="255" />
+      <Entry c1="160" c2="141" c3="72" c4="255" />
+      <Entry c1="208" c2="191" c3="129" c4="255" />
+      <Entry c1="126" c2="109" c3="56" c4="255" />
+      <Entry c1="226" c2="216" c3="184" c4="255" />
+      <Entry c1="248" c2="216" c3="120" c4="255" />
+      <Entry c1="232" c2="216" c3="168" c4="255" />
+      <Entry c1="248" c2="232" c3="184" c4="255" />
+      <Entry c1="175" c2="168" c3="147" c4="255" />
+      <Entry c1="156" c2="145" c3="117" c4="255" />
+      <Entry c1="248" c2="199" c3="104" c4="255" />
+      <Entry c1="96" c2="80" c3="49" c4="255" />
+      <Entry c1="248" c2="232" c3="200" c4="255" />
+      <Entry c1="234" c2="182" c3="96" c4="255" />
+      <Entry c1="208" c2="161" c3="87" c4="255" />
+      <Entry c1="241" c2="207" c3="152" c4="255" />
+      <Entry c1="40" c2="27" c3="8" c4="255" />
+      <Entry c1="52" c2="41" c3="24" c4="255" />
+      <Entry c1="248" c2="216" c3="168" c4="255" />
+      <Entry c1="203" c2="181" c3="148" c4="255" />
+      <Entry c1="219" c2="199" c3="168" c4="255" />
+      <Entry c1="73" c2="57" c3="36" c4="255" />
+      <Entry c1="247" c2="195" c3="123" c4="255" />
+      <Entry c1="248" c2="216" c3="184" c4="255" />
+      <Entry c1="248" c2="232" c3="216" c4="255" />
+      <Entry c1="247" c2="167" c3="121" c4="255" />
+      <Entry c1="232" c2="200" c3="184" c4="255" />
+      <Entry c1="246" c2="191" c3="167" c4="255" />
+      <Entry c1="248" c2="200" c3="184" c4="255" />
+      <Entry c1="57" c2="17" c3="8" c4="255" />
+      <Entry c1="104" c2="89" c3="87" c4="255" />
+      <Entry c1="169" c2="151" c3="149" c4="255" />
+      <Entry c1="113" c2="104" c3="103" c4="255" />
+      <Entry c1="128" c2="119" c3="118" c4="255" />
+      <Entry c1="245" c2="148" c3="143" c4="255" />
+      <Entry c1="40" c2="8" c3="8" c4="255" />
+      <Entry c1="24" c2="8" c3="8" c4="255" />
+      <Entry c1="40" c2="24" c3="24" c4="255" />
+      <Entry c1="56" c2="40" c3="40" c4="255" />
+      <Entry c1="184" c2="168" c3="168" c4="255" />
+      <Entry c1="200" c2="183" c3="183" c4="255" />
+      <Entry c1="216" c2="200" c3="200" c4="255" />
+      <Entry c1="248" c2="232" c3="232" c4="255" />
+      <Entry c1="218" c2="216" c3="216" c4="255" />
+      <Entry c1="248" c2="248" c3="248" c4="255" />
+      <Entry c1="200" c2="200" c3="200" c4="255" />
+      <Entry c1="184" c2="184" c3="184" c4="255" />
+      <Entry c1="168" c2="168" c3="168" c4="255" />
+      <Entry c1="24" c2="24" c3="24" c4="255" />
+      <Entry c1="8" c2="8" c3="8" c4="255" />
+    </ColorTable>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">C:\Users\tjmartin\OneDrive - Ordnance Survey\Projects\MagicGDAL\Data\Raster\Raster_250k\HP.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="4000" RasterYSize="4000" DataType="Byte" BlockXSize="4000" BlockYSize="263" />
+      <SrcRect xOff="0" yOff="0" xSize="4000" ySize="4000" />
+      <DstRect xOff="12000" yOff="0" xSize="4000" ySize="4000" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">C:\Users\tjmartin\OneDrive - Ordnance Survey\Projects\MagicGDAL\Data\Raster\Raster_250k\HT.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="4000" RasterYSize="4000" DataType="Byte" BlockXSize="4000" BlockYSize="263" />
+      <SrcRect xOff="0" yOff="0" xSize="4000" ySize="4000" />
+      <DstRect xOff="8000" yOff="4000" xSize="4000" ySize="4000" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">C:\Users\tjmartin\OneDrive - Ordnance Survey\Projects\MagicGDAL\Data\Raster\Raster_250k\HU.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="4000" RasterYSize="4000" DataType="Byte" BlockXSize="4000" BlockYSize="263" />
+      <SrcRect xOff="0" yOff="0" xSize="4000" ySize="4000" />
+      <DstRect xOff="12000" yOff="4000" xSize="4000" ySize="4000" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">C:\Users\tjmartin\OneDrive - Ordnance Survey\Projects\MagicGDAL\Data\Raster\Raster_250k\HW.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="4000" RasterYSize="4000" DataType="Byte" BlockXSize="4000" BlockYSize="263" />
+      <SrcRect xOff="0" yOff="0" xSize="4000" ySize="4000" />
+      <DstRect xOff="0" yOff="8000" xSize="4000" ySize="4000" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">C:\Users\tjmartin\OneDrive - Ordnance Survey\Projects\MagicGDAL\Data\Raster\Raster_250k\HX.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="4000" RasterYSize="4000" DataType="Byte" BlockXSize="4000" BlockYSize="263" />
+      <SrcRect xOff="0" yOff="0" xSize="4000" ySize="4000" />
+      <DstRect xOff="4000" yOff="8000" xSize="4000" ySize="4000" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">C:\Users\tjmartin\OneDrive - Ordnance Survey\Projects\MagicGDAL\Data\Raster\Raster_250k\HY.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="4000" RasterYSize="4000" DataType="Byte" BlockXSize="4000" BlockYSize="263" />
+      <SrcRect xOff="0" yOff="0" xSize="4000" ySize="4000" />
+      <DstRect xOff="8000" yOff="8000" xSize="4000" ySize="4000" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">C:\Users\tjmartin\OneDrive - Ordnance Survey\Projects\MagicGDAL\Data\Raster\Raster_250k\HZ.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="4000" RasterYSize="4000" DataType="Byte" BlockXSize="4000" BlockYSize="263" />
+      <SrcRect xOff="0" yOff="0" xSize="4000" ySize="4000" />
+      <DstRect xOff="12000" yOff="8000" xSize="4000" ySize="4000" />
+    </SimpleSource>
+  </VRTRasterBand>
+</VRTDataset>
