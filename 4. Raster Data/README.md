@@ -1,8 +1,8 @@
 # 4. Raster Data
 ---
-This chapter is focused on using GDAL to work with raster data. Much like translating and processing vector data GDAL comes with a number of different tools that can do a number of different types of procressing.
+This chapter is focused on using GDAL to work with raster data. Much like translating and processing vector data GDAL comes with a number of different tools that can do a number of different types of processing.
 
-## 4.1 Create Virtual Rasters/Image Catologues/Image Mosaics
+## 4.1 Create Virtual Rasters/Image Catalogues/Image Mosaics
 ---
 Often you might find that you have tens, hundreds, thousands of raster files and to process or even open each one would take a very long time. GDAL offers a great tool call [GDALBUILDVRT](https://gdal.org/programs/gdalbuildvrt.html) to build a virtual dataset and provide a single file to use.
 
@@ -10,7 +10,7 @@ Open a command prompt/terminal in the Data/Raster/Raster_250k folder and run the
 
 ```gdalbuildvrt Raster_250k.vrt *.tif```
 
-This should run successfully **HOWEVER** depending on where you installed GDAL from you might find that on Windows 10 that you receive an error message. There is an open issue on [github](https://github.com/OSGeo/gdal/issues/1749).
+This should run successfully **HOWEVER** depending on where you installed GDAL from you might find that on Windows 10 that you receive an error message. There is an open issue on [GitHub](https://github.com/OSGeo/gdal/issues/1749).
 
 So one work around or another method to provide a list of files to gdalbuildvrt is to create the file list in a textfile and then provide that to gdalbuildvrt
 
@@ -22,7 +22,7 @@ Then run
 
 ```gdalbuildvrt -input_file_list filelist.txt Raster_250k.vrt```
 
-You can now opne the single .vrt file in software like QGIS, ESRI etc.
+You can now open the single .vrt file in software like QGIS, ESRI etc.
 
 But you can now use the vrt for other processing.
 
@@ -32,13 +32,13 @@ What happens if you would prefer a single image than a VRT
 
 ```gdal_translate -f GTiff Raster_250k.vrt Raster_250k.tif -a_srs EPSG:27700```
 
-If you run gdalinfo on this single image it will show some useful information similar to what was dicussed in the 'Getting Started' page. In the Metadata there is no compression and the image is 183Mb, so lets add some compression.
+If you run gdalinfo on this single image it will show some useful information similar to what was discussed in the 'Getting Started' page. In the Metadata there is no compression and the image is 183Mb, so lets add some compression.
 
 A popular compression to add is JPEG or LZW and this does depend on the data and does take some trial and error to make sure the results are as you expect as some compressions are LOSSY or LOSSLESS.
 
 ```gdal_translate -f GTiff Raster_250k.vrt Raster_250k_LZW.tif -co COMPRESS=LZW -a_srs EPSG:27700```
 
-So the same output with very little noticable difference is 5.3Mb giving us a massive saving in disk space.
+So the same output with very little noticeable difference is 5.3Mb giving us a massive saving in disk space.
 
 ## 4.3 Adding Overviews for Performance
 ---
@@ -74,7 +74,7 @@ Then run the following GDAL command in the Data/Raster_Vector folder where the S
 
 You can see that the raster has been clipped to our NationalParks.shp polygon. **HOWEVER** we have a weird output where we now have a blue area where data used to be. 
 
-You can definitivley set this area to no data by running 
+You can definitively set this area to no data by running 
 
 ```gdalwarp -srcnodata 0 -dstnodata 0 -cutline NationalParks.shp SU.tif SU_DSTNODATA_9.tif -s_srs EPSG:27700 -t_srs EPSG:27700 -co COMPRESS=LZW```
 
@@ -132,7 +132,7 @@ However some software cannot handle 3D lines so it can be useful to generate con
 
 This will generate contour polygons and you may notice that you have had to define two new parameters -amin and -amax to declare the attribute name for the polygon's min and max elevations.
 
-## Generating hillshade
+## Generating Hillshade
 ---
 One common technique to be used on an elevation raster is to create hillshades. This can be achieved using the __gdaldem__ program.
 

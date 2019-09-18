@@ -4,7 +4,7 @@ GDAL can be installed and run on Windows, OSX and Linux and there are different 
 
 ##Windows Installation
 
-In the GDAL docs it recommends to use Conda to instal GDAL however one of the alternatives that is not listed is [GIS Internals](https://www.gisinternals.com/) which provide a number of options including MSI installers for Windows for both the stable and development release.
+In the GDAL docs it recommends to use Conda to install GDAL however one of the alternatives that is not listed is [GIS Internals](https://www.gisinternals.com/) which provide a number of options including MSI installers for Windows for both the stable and development release.
 
 For this workshop we will use stable version and this can be download using the following instructions
 
@@ -32,7 +32,7 @@ Once download, run the installer.
 
 ![alt text](../Images/GDALInstall5.PNG "GDAL Install 5")
 
-We now need to add some of the installation directories to the PATH environment variable so that everything is avaliable for us ot use as simply as possible.
+We now need to add some of the installation directories to the PATH environment variable so that everything is available for us to use as simply as possible.
 
 __THIS NEXT SECTION INVOLVES EDITING SYSTEM VARIABLES, PLEASE CHECK THAT YOU ARE ALLOWED TO BY YOUR IT TEAM__
 
@@ -59,20 +59,20 @@ And give the variable a name of
 
 ```C:\Program Files\GDAL\projlib```
 
-8. Next we need to add to the PATH environement variable so select it in the list of System variables (in the bottom half of the dialogue), and click 'Edit'
+8. Next we need to add to the PATH environment variable so select it in the list of System variables (in the bottom half of the dialogue), and click 'Edit'
 
 If you are on Windows 10 click 'New' and then use the 'Browse..' button on the right to go to 
 
 ```C:\Program Files\GDAL```
 
-If you are on Windows 7 and before it is likely that the PATH environement variable is a semi colon seperated list so append the append the folder path to the end.
+If you are on Windows 7 and before it is likely that the PATH environment variable is a semi colon separated list so append the append the folder path to the end.
 
 ```;C:\Program Files\GDAL```
 
 Hit OK on the open dialogue windows and we can now check that GDAL is installed and accessible from the command line.
 
 
-9.  Check the installation. Open a Powershell/Command Prompts window and run the following
+9.  Check the installation. Open a PowerShell/Command Prompts window and run the following
 
 ```gdalinfo --version```
 
@@ -90,7 +90,7 @@ If you get an error like this
 
 This is likely because the environment variables we not set correctly. Retry some of the above steps and try again.
 
-__After editing environment variables you must close and reopen any open termianls, command prompt or powershell windows so that they can pick up the updated variables__
+__After editing environment variables you must close and reopen any open terminals, command prompt or PowerShell windows so that they can pick up the updated variables__
 
 
 

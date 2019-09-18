@@ -4,7 +4,7 @@ This workshop section will introduce some of the main GDAL utilities that you wi
 
 ```gdalinfo --version```
 
-From the commandline (terminal, powershell or command prompt) and making sure it shows the version you expect.
+From the command line (terminal, PowerShell or command prompt) and making sure it shows the version you expect.
 
 A list of Utilities/Programs is found [here](https://gdal.org/programs/index.html) and they all have a different purpose and listed below are the most common.
 
@@ -20,7 +20,7 @@ In this section we get use to using the command line and try out the program
 
 __gdalinfo/ogrinfo__ - both of these are useful for finding out the metadata of the file. It will give you the format, number of features, projection, bounding box etc
 
-Open a terminal/powershell/command prompt window in the data directory of the workshop and run the following commmand
+Open a terminal/PowerShell/command prompt window in the data directory of the workshop and run the following command
 
 ```gdalinfo --formats```
 
@@ -44,7 +44,7 @@ And we should get an output like this
 
 ![alt text](../Images/GDALInfo_HP.PNG "GDAL Info HP")
 
-The output gives us alot of information about this file including its coordinate system (if it has one), the pixel size, origin, metadata, the compression used on the file and the colour ramp.
+The output gives us a lot of information about this file including its coordinate system (if it has one), the pixel size, origin, metadata, the compression used on the file and the colour ramp.
 
 In the [docs](https://gdal.org/programs/gdalinfo.html) it lists a number of different parameters that can be used with the gdalinfo command to return different information than the default output. So lets try a few out
 
@@ -66,7 +66,7 @@ Which returns a much smaller output.
 
 ```gdalinfo -json -noct -proj4 HP.tif```
 
-Which has added the folliwng proj4 definition string to our output
+Which has added the following proj4 definition string to our output
 
 "proj4":"+proj=tmerc +lat_0=49 +lon_0=-2 +k=0.9996012717 +x_0=400000 +y_0=-100000 +ellps=airy +units=m +no_defs"
 
@@ -101,7 +101,7 @@ If you want to see all the feature information you can run the following command
 
 You will see the print out of all the coordinates. So best to avoid this on a massive file.
 
-You can get specific information about a single feature using the __-where__ parameter, sof or example
+You can get specific information about a single feature using the __-where__ parameter, so for example
 
 ```ogrinfo -so -where id=1 NationalParks.shp NationalParks```
 

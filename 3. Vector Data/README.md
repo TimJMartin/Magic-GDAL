@@ -73,7 +73,7 @@ We dropped the __-gt__ parameter because the ESRI Shapefile we are converting to
 
 ## 3.4 Using additional projection files
 ---
-In the in-built coordinate transformations are built on the Proj library. There is an excellent write up all about the Proj Library and its history (here)[gaia-gis.it/fossil/libspatialite/wiki?name=PROJ.6]. However, on the rare occassion the library does not contain the most accurate transformation for a particular CRS and that is the case for British National Grid.
+In the in-built coordinate transformations are built on the Proj library. There is an excellent write up all about the Proj Library and its history (here)[gaia-gis.it/fossil/libspatialite/wiki?name=PROJ.6]. However, on the rare occasion the library does not contain the most accurate transformation for a particular CRS and that is the case for British National Grid.
 
 Ordnance Survey release a transformation model called (OSTN15)[ordnancesurvey.co.uk/business-and-government/help-and-support/navigation-technology/os-net/formats-for-developers.html] which improves the accuracy of coordinate transformation and we can use that in conjunction with GDAL to improve our conversion.
 
@@ -91,7 +91,7 @@ GDAL can not only read from the wide number of formats listed when you run ```og
 
 This can save us a lot of time and effort by not having to extract the files first.
 
-We can initally check the file using the __ogrinfo__ as before.
+We can initially check the file using the __ogrinfo__ as before.
 
 ```ogrinfo /vsizip/NationalParks.zip```
 
@@ -153,7 +153,7 @@ You can see __ogr2ogr__ has correctly parsed the GML file and create two GPKG ta
 
 As mentioned above if we modify the GFS we can control what ogr reads from the GML file.
 
-For example if we only want it to parse the GreenspaceSite data and only a suset of the attributes we can modify the GFS to be:
+For example if we only want it to parse the GreenspaceSite data and only a subset of the attributes we can modify the GFS to be:
 
 ![alt text](../Images/GFS4.PNG "GFS 4")
 
@@ -165,7 +165,7 @@ We can then change our original __ogr2ogr__ command to
 
 You can see only the polygon GreenspaceSite features with just their function attribute have been parse from the GML.
 
-This ability to modify the GFS file is extremely useful especially when ogr cannot automatically find all the relevent information from the GML file, which can be extremely complex.
+This ability to modify the GFS file is extremely useful especially when ogr cannot automatically find all the relevant information from the GML file, which can be extremely complex.
 
 ---
 # END OF VECTOR CHAPTER

@@ -35,7 +35,7 @@ Export table to GeoJSON using OSTN15
 
 This will export a GeoJSON file that can be opened in apps like geojson.io and QGIS.
 
-**HOWEVER** the problem with this defualt export is the it uses the geoJSON 2008 Spec where the coordinate precison is set at 15 decimal places, for example it exports a point as
+**HOWEVER** the problem with this default export is the it uses the geoJSON 2008 Spec where the coordinate precision is set at 15 decimal places, for example it exports a point as
 
 >"geometry": { "type": "Point", "coordinates": [ -0.904128717174183, 60.685660248261584 ] }
 
@@ -59,7 +59,7 @@ Well amazingly you can do it entirely from ogr2ogr
 
 ```ogr2ogr -progress --config PG_USE_COPY YES -gt 65000 -f PostgreSQLPG:"dbname=x user=x password=x host=x port=5432" -a_srs EPSG:27700 -update -doo PRELUDE_STATEMENTS="DROP SCHEMA IF EXISTS new_schema CASCADE;CREATE SCHEMA new_schema;" -doo CLOSING_STATEMENTS="COMMIT;CREATE INDEX index_name_idx ON new_schema.table_name(attribute_name);"```
 
-This means we can create a new schema, define the table sctructure, load the data and index all from one command - **GENIUS**
+This means we can create a new schema, define the table structure, load the data and index all from one command - **GENIUS**
 
 ---
 
