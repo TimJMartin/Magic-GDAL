@@ -32,7 +32,7 @@ Once download, run the installer.
 
 ![alt text](../Images/GDALInstall5.PNG "GDAL Install 5")
 
-We know need to add some of the installation directories to the PATH environment variable so that everything is avaliable for us ot use as simply as possible.
+We now need to add some of the installation directories to the PATH environment variable so that everything is avaliable for us ot use as simply as possible.
 
 __THIS NEXT SECTION INVOLVES EDITING SYSTEM VARIABLES, PLEASE CHECK THAT YOU ARE ALLOWED TO BY YOUR IT TEAM__
 
