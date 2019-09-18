@@ -85,7 +85,7 @@ so open a new command prompt window in Data/Vector/Shapefile.
 
 ```ogrinfo -so NationalParks.shp```
 
-You will notice that it really doesn't give us too much info except the name of the file being opened and what driver is being used to open it. You might thin 'I was expecting more...'
+You will notice that it really doesn't give us too much info except the name of the file being opened and what driver is being used to open it. You might think 'I was expecting more...'
 
 Well what ogrinfo is displaying is the layername within the ESRI Shapefile so lets expand on the previous command and provide the layer name as well.
 
