@@ -12,7 +12,7 @@ So let's crack on and give it a try.
 ---
 We will start with a very basic command that translate from one spatial format to another, in this case ESRI Shapefile to GeoPackage (my favourite format at the moment).
 
-Open a command prompt in the Data/Vector folder and run..
+Open a command prompt in the Data/Vector/Shapefile folder and run..
 
 ```ogr2ogr -f GPKG ../../Results/NationalParks.gpkg NationalParks.shp```
   
