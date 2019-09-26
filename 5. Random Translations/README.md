@@ -7,7 +7,7 @@ Export specific PostGIS table to a GeoPackage
 
 ```ogr2ogr -progress -gt 65000 -f GPKG Table.gpkg PG:"dbname=data user=x password=x host=x port=x" -nlt GEOMETRY_TYPE -nln NEW_TABLENAME -sql "SELECT * FROM schema_name.tablename" -a_srs EPSG:27700```
 
-I use the -sql parameter so that I can control exactly the fields I want to export or even do some PostGIS functions during the export like ST_Buffer ot ST_Transform
+I use the -sql parameter so that I can control exactly the fields I want to export or even do some PostGIS functions during the export like ST_Buffer or ST_Transform
 
 ---
 
