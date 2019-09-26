@@ -14,7 +14,7 @@ We will start with a very basic command that translate from one spatial format t
 
 Open a command prompt in the Data/Vector folder and run..
 
-```ogr2ogr -f GPKG ../../Results/NationalParks.gpkg NationalParks.shp```
+```ogr2ogr -f GPKG NationalParks.gpkg NationalParks.shp```
   
 GDAL will run and create our new GeoPackage, open this file in QGIS.
 
@@ -33,7 +33,7 @@ Not very exciting translation but it introduces several key principles.
 ---
 We can now use a few extra parameters to improve and tweak things
 
-```ogr2ogr -progress -gt 50000 -f GPKG ../../Results/NationalParks_2.gpkg NationalParks.shp```
+```ogr2ogr -progress -gt 50000 -f GPKG NationalParks_2.gpkg NationalParks.shp```
 
 We have used two new parameters
 
@@ -55,7 +55,7 @@ Within ogr2ogr there are three parameters we can use to set the coordinate refer
 
 We can see this in action by converting our National Parks ESRI Shapefile to a different ESRI Shapefile in WGS84 (EPSG:4326) projection.
 
-```ogr2ogr -progress -f "ESRI Shapefile" ../../Results/NationalParks_WGS84.shp NationalParks.shp -s_srs EPSG:27700 -t_srs EPSG:4326```
+```ogr2ogr -progress -f "ESRI Shapefile" NationalParks_WGS84.shp NationalParks.shp -s_srs EPSG:27700 -t_srs EPSG:4326```
 
 If you open the NationalParks_WGS84.prj file in a text editor you will see it shows.
 
@@ -81,7 +81,7 @@ Download the NTv2 format files from the website and extract them to a suitable p
 
 The below command gives you an example of how to use the __OSTN15_NTv2_OSGBtoETRS.gsb__ which I extracted to C:\Proj4, if your location is different replace the path to where the gsb file is.
 
-```ogr2ogr -progress -f "ESRI Shapefile" ../../Results/NationalParks_WGS84_OSTN15.shp NationalParks.shp -s_srs "+proj=tmerc +lat_0=49 +lon_0=-2 +k=0.999601 +x_0=400000 +y_0=-100000 +ellps=airy +units=m +no_defs +nadgrids=C:\Proj4\OSTN15_NTv2_OSGBtoETRS.gsb" -t_srs EPSG:4326 ``` 
+```ogr2ogr -progress -f "ESRI Shapefile" NationalParks_WGS84_OSTN15.shp NationalParks.shp -s_srs "+proj=tmerc +lat_0=49 +lon_0=-2 +k=0.999601 +x_0=400000 +y_0=-100000 +ellps=airy +units=m +no_defs +nadgrids=C:\Proj4\OSTN15_NTv2_OSGBtoETRS.gsb" -t_srs EPSG:4326 ``` 
 
 ![alt text](../Images/QGIS_OSTN15.PNG "GDAL OSTN15")
 

@@ -1,1 +1,0 @@
-Results of the GDAL translations should end up in here.
