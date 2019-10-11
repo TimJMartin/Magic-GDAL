@@ -62,5 +62,8 @@ Well amazingly you can do it entirely from ogr2ogr
 This means we can create a new schema, define the table structure, load the data and index all from one command - **GENIUS**
 
 ---
+You can use gdaltindex to create an ESRI Shapefile showing the extent of a single or mutliple rasters and their filepaths
+
+```gdaltindex -skip_different_projection -t_srs EPSG:27700 indexoutput.shp --optfile filelist.txt```
 
 # MORE TO BE ADDED
