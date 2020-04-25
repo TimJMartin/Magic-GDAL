@@ -20,7 +20,7 @@ In the command prompt run
 
 Then run
 
-```gdalbuildvrt -input_file_list filelist.txt Raster_250k.vrt```
+```gdalbuildvrt -input_file_list filelist.txt Raster_250k.vrt -a_srs EPSG:27700```
 
 You can now open the single .vrt file in software like QGIS, ESRI etc.
 
