@@ -154,5 +154,5 @@ __gdaldem__ can used in the same way to generate
 outputs as well. You can experiment with these different modes using the same NN99.asc file.
 
 ---
-# END OF RASTER CHAPTER
+## END OF RASTER CHAPTER
 ---

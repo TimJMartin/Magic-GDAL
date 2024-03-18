@@ -1,97 +1,79 @@
-# GDAL Installation
+# GDAL Installation and Setup
 
-GDAL can be installed and run on Windows, OSX and Linux and there are different approaches based on your operating system. There is a list [here](https://gdal.org/download.html) that give a good list of options. 
+## Introduction
 
-##Windows Installation
+GDAL (Geospatial Data Abstract Library) underpins almost all geospatial data translation, including QGIS and FME. It is an incredible tool and is used across OS to convert, load and translate OS data. For GDTF to work we need to install and get it setup correctly before we can start data testing.
 
-In the GDAL docs it recommends to use Conda to install GDAL however one of the alternatives that is not listed is [GIS Internals](https://www.gisinternals.com/) which provide a number of options including MSI installers for Windows for both the stable and development release.
+## Installation
 
-For this workshop we will use stable version and this can be download using the following instructions
+There are multiple ways to install GDAL, especially for Windows, you can download executables, install for Python, and lots of other flavours. Below is the guide that has always worked for me and should be used.
 
-1. Go to the releases [page](https://www.gisinternals.com/release.php) and choose the appropriate version (x64 or win32) for your Windows operating system.
+Go to [GIS Internals](https://www.gisinternals.com/) and click on 'Stable Releases'
 
-![alt text](../Images/GISInternals_Releases.PNG "GIS Internals Releases")
+![image](..\Images\GDAL_Setup_1.png)
 
-I have picked the MSVC 2017 x64 option highlighted in yellow
+Then select the MSVC 2022 x64 release
 
-2. On the next page you will see a list of download options and we want to download the core MSI file. (We will ignore all the other download options for the time being)
+![image](..\Images/GDAL_Setup_2.png)
 
-![alt text](../Images/GISInternals_Downloads.PNG "GIS Internals Downloads")
+Then download the gdal-3.8.1-1930-x64-core.msi
 
-Once download, run the installer.
+![image](..\Images/GDAL_Setup_3.png)
 
-3. The installer wizard is pretty straight forward, just read and accept the licence terms, and then either choose 'Typical' or 'Complete' during the install process. (I personally do 'Complete')
+Once download launch the executable.
 
-![alt text](../Images/GDALInstall1.PNG "GDAL Install 1")
+![image](..\Images/GDAL_Setup_4.png)
+Click 'Next'
 
-![alt text](../Images/GDALInstall2.PNG "GDAL Install 2")
+![image](..\Images/GDAL_Setup_5.png)
+Click the licence acceptence
 
-![alt text](../Images/GDALInstall3.PNG "GDAL Install 3")
+![image](..\Images/GDAL_Setup_6.png)
+Choose 'Complete'
 
-![alt text](../Images/GDALInstall4.PNG "GDAL Install 4")
+![image](..\Images/GDAL_Setup_7.png)
+Click 'Install'
 
-![alt text](../Images/GDALInstall5.PNG "GDAL Install 5")
+![image](..\Images/GDAL_Setup_8.png)
+Click 'Finish'
 
-We now need to add some of the installation directories to the PATH environment variable so that everything is available for us to use as simply as possible.
+This completes the installation and now comes the configuration.
 
-__THIS NEXT SECTION INVOLVES EDITING SYSTEM VARIABLES, PLEASE CHECK THAT YOU ARE ALLOWED TO BY YOUR IT TEAM__
+## GDAL Configuration
 
+To allow us to use GDAL like we need and to deal with OS data we need to configure it before we can use it. 
 
-4. Open the System Properties and click 'Environment Variables'
+Click the Start button and search for 'Environment Variables' 
 
-![alt text](../Images/EnvVar1.PNG "Environment Variables 1")
+![image](..\Images/GDAL_Setup_9.png)
+Click 'Environment Variables'
 
-5. The new dialogue is split into two parts. User variables for the current user (the one logged in) and then in the bottom half 'System variables'. We need to add two new system variables and then edit the PATH variable.
-   
-6. Click New and a new dialogue box opens
+![image](..\Images/GDAL_Setup_10.png)
+On this dialogue page we need to create and edit a few environment variables and edit the PATH environment variable. 
 
-![alt text](../Images/EnvVar2.PNG "Environment Variables 2")
+Under 'System variables' scroll down till you see 'Path', select the row and then click 'Edit'.
 
-In Windows 10 there is now simpler approach to adding the path by using the Browse Directory.. button, use this to go to
+![image](..\Images/GDAL_Setup_11.png)
+We need to make sure we use the installed GDAL version and not the one that comes with PostgreSQL+PostGIS, so we need to make sure the path to C:\Program Files\GDAL is above the C:\Program Files\PostgreSQL\16\bin. Use the Move Up and Move Down to accomplish this and then click 'Ok'.
 
-```C:\Program Files\GDAL\gdal-data```
+Depending on the order you installed GDAL or PostgreSQL+PostGIS we need to edit the GDAL_DATA variable. 
 
-And give the variable a name of
+![image](..\Images/GDAL_Setup_12.png)
 
-```GDAL_DATA```
+You can see the current entry is looking at the PostgreSQL version, so select it and then click 'Edit' and change the it to point to the GDAL one.
 
-7. Repeat the above step to add a system variable called 'PROJ_LIB' with the variable value as 
+![image](..\Images/GDAL_Setup_13.png)
+Click 'Ok' to save those changes.
 
-```C:\Program Files\GDAL\projlib```
+Finally we need to create a new System Variable called PROJ_LIB, so in the dialogue box click 'New' and enter in the following details and then click 'Ok'.
+![image](..\Images/GDAL_Setup_14.png)
 
-8. Next we need to add to the PATH environment variable so select it in the list of System variables (in the bottom half of the dialogue), and click 'Edit'
+To make sure all of this has worked open a Powershell or Command Prompt window and type the following command
 
-If you are on Windows 10 click 'New' and then use the 'Browse..' button on the right to go to 
+```
+ogrinfo --version
+```
+This will display which GDAL has been found.
 
-```C:\Program Files\GDAL```
-
-If you are on Windows 7 and before it is likely that the PATH environment variable is a semi colon separated list so append the append the folder path to the end.
-
-```;C:\Program Files\GDAL```
-
-Hit OK on the open dialogue windows and we can now check that GDAL is installed and accessible from the command line.
-
-
-9.  Check the installation. Open a PowerShell/Command Prompts window and run the following
-
-```gdalinfo --version```
-
-This should display 
-
-![alt text](../Images/GDALInstall6.PNG "GDAL Install 6")
-
-Ignore the MSSQLSpatial error - this is due because the SQL Server Native Client is not installed on the system.
-
-You can see the GDAL version is 3.0.0 released 2019/05/05 (this might be different depending on when you use this workshop)
-
-If you get an error like this
-
-![alt text](../Images/GDALInstallError.PNG "GDAL Install Error")
-
-This is likely because the environment variables we not set correctly. Retry some of the above steps and try again.
-
-__After editing environment variables you must close and reopen any open terminals, command prompt or PowerShell windows so that they can pick up the updated variables__
-
-
-
-
+![image](..\Images/GDAL_Setup_15.png)
+If this displays 3.8.1 we know this is correct as the version installed with PostrgeSQL is 3.7. 

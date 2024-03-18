@@ -26,7 +26,7 @@ Open a terminal/PowerShell/command prompt window in the data directory of the wo
 
 This will return a list of all the raster spatial formats that are supported in this version of GDAL
 
-![alt text](../Images/GDALInfo_Formats.PNG "GDAL Formats")
+![alt text](../Images/GDAL_Formats.PNG "GDAL Formats")
 
 In the list you will see the shorthand name of the supported formats and whether it can read or write that format and then the full format name. It is important to know the shorthand name as this is option used. For example GTiff is GeoTiff.
 
@@ -107,3 +107,4 @@ You can get specific information about a single feature using the __-where__ par
 
 And if you wanted the full information on that feature you would switch from the __-so__ to the __-al__ parameter.
 
+In recent versions of GDAL **ogrinfo** can now be used with the -json switch so that the output is also in a JSON format, much like **gdalinfo**. 
